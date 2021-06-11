@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font:  Helvetica, Arial; 
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+form{ 
+    background: #fff; 
+    padding: 3px; 
+    position: fixed; 
+    bottom: 0; width: 100%; 
+    border-color: #000; 
+    border-top-style: solid; 
+    border-top-width: 1px;
+}
+form input{ 
+    border-style: solid; 
+    border-width: 1px; 
+    padding: 10px; 
+    width: 85%; 
+    margin-right: .5%; 
+    outline-color: rgb(0, 183, 255);
+}
+form button{ 
+    width: 9%; 
+    background: rgb(47, 105, 212); 
+    border:1px solid rgb(0, 132, 255);
+    border-radius: 5%;
+    outline-color: rgb(0, 183, 255);
+    box-shadow: currentColor;
+    text-shadow: rgb(0, 183, 255);
+    color:white;
+    padding: 10px; 
+    margin-left: 2%; 
+    font-size: medium;
+    font-weight: 500;
+    cursor: pointer;
+}
+#messages{ 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+#messages li{ 
+    padding: 5px 10px; 
+    font-size: 17px;
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
