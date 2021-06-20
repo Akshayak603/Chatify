@@ -20,15 +20,15 @@ app.set('views',path.join(__dirname,'views'));
 app.use(express.static(path.join(__dirname,'/public')));
 
 app.get('/',(req,res)=>{
-    res.render('home.ejs');
+    res.render('home');
 })
 
 app.get('/about',(req,res)=>{
-    res.render('about.ejs');
+    res.render('about');
 })
 
 app.get('/chatzone',(req,res)=>{
-    res.render('index.ejs')
+    res.render('index')
 })
 
 io.on('connection',function(socket){
