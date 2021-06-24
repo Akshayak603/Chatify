@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatZone</title>
+    <title>Chatify</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="home.css">
@@ -15,18 +15,26 @@
         <header class="mb-auto">
             <div>
                 <nav class="nav nav-masthead navbar-expand-lg justify-content-center float-md-left">
-                    <a class="navbar-brand" href="/"><h3>ChatZone</h3></a>
+                    <a class="navbar-brand" href="/"><h3>Chatify</h3></a>
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    <!-- <a class="nav-link" href="/campgrounds">Campgrounds</a> -->
                     <a class="nav-link" aria-current="page" href="/about">About</a>
                 </nav>
             </div>
         </header>
         <main class="px-3">
-            <h1>ChatZone</h1>
+            <h1>Chatify</h1>
             <p class="lead"> Welcome to ChatZone! <br> Just tell your buddy to open site and chat all alone!!<br>
                 This is basically a stranger Hub!!</p>
-            <a href="/chatzone" class="btn btn-lg btn-1 font-weight-bold border-white bg-white">Start</a>
+            
+            <div>
+            <form action="/chat" method="POST">
+                <input id="user1" name="username" autocomplete="off" autofocus="on" placeholder="Enter your username..." required/>
+                    <div>
+                        <button id="btn" type="submit" class="btn btn-lg mt-3 btn-1 font-weight-bold border-white bg-white">Start</button>
+                    </div>
+                    
+            </form>
+            
         </main>
 
         <footer class="mt-auto text-white-50">
@@ -35,8 +43,6 @@
 
 
     </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>

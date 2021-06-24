@@ -3,8 +3,9 @@ const socket=io.connect();
 
         const form=document.getElementById('chatForm');
         const input=document.getElementById('txt');
+        const username=input.value;
+        input.value="";
         const ul1=document.getElementById('messages');
-
         form.addEventListener('submit',function(e){
             e.preventDefault();
             const val=input.value;
@@ -26,11 +27,7 @@ const socket=io.connect();
             li2.innerText=username;
             ul1.appendChild(li2);
          })
-
-         let username="";
-         while(!username){
-             username=prompt("Enter your name to start a chat:")
-         }
+         
         socket.emit('username',username);
 
       

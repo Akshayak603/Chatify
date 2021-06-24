@@ -6,11 +6,6 @@ const app=express();
 const http=require('http').Server(app);
 const path=require('path');
 const io = require('socket.io')(http);
-const ejsMate=require('ejs-mate');
-
-app.engine('ejs', ejsMate);
-
-
 
 //setting view engine as ejs
 app.set('view engine','ejs');
@@ -18,17 +13,20 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
 app.use(express.static(path.join(__dirname,'/public')));
+app.use(express.urlencoded({extended:true}));
+
 
 app.get('/',(req,res)=>{
     res.render('home');
 })
 
-app.get('/about',(req,res)=>{
-    res.render('about');
+app.post('/chat',(req,res)=>{
+    const user1=req.body.username;
+    res.render('index',{user1});
 })
 
-app.get('/chatzone',(req,res)=>{
-    res.render('index')
+app.get('/about',(req,res)=>{
+    res.render('about');
 })
 
 io.on('connection',function(socket){

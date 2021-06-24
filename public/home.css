@@ -37,3 +37,8 @@ body{
     transform: translateY(-5px);
     box-shadow:  5px 5px 5px #077fc5;
 }
+
+#user1{
+    width: 30vw;
+    outline-color: cadetblue;
+}
