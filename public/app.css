@@ -26,12 +26,13 @@ form input{
     border-style: solid; 
     border-width: 1px; 
     padding: 10px; 
-    width: 90%; 
+    width: 90vw; 
     /* margin-right: .5%;  */
     outline-color: rgb(0, 183, 255);
+    height: 8vh;
 }
 form button{ 
-    width: 4%; 
+    width: 7vw; 
     background: rgb(47, 105, 212); 
     border:1px solid rgb(0, 132, 255);
     border-radius: 5%;

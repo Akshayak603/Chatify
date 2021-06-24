@@ -39,6 +39,11 @@ body{
 }
 
 #user1{
-    width: 30vw;
+    width: 35vw;
+    height: 8vh;
     outline-color: cadetblue;
+}
+
+.in1{
+    font-size: 1.2rem;
 }
