@@ -26,13 +26,13 @@ form input{
     border-style: solid; 
     border-width: 1px; 
     padding: 10px; 
-    width: 90vw; 
+    width: 85vw; 
     /* margin-right: .5%;  */
     outline-color: rgb(0, 183, 255);
-    height: 8vh;
+    height: 7vh;
 }
-form button{ 
-    width: 7vw; 
+/* form button{ 
+    width: 6.5vw; 
     background: rgb(47, 105, 212); 
     border:1px solid rgb(0, 132, 255);
     border-radius: 5%;
@@ -42,9 +42,10 @@ form button{
     color:white;
     padding: 5px; 
     margin-left: 10px;
-    /* margin-right: 1%; */
     cursor: pointer;
-}
+} */
+
+
 #messages{ 
     list-style-type: none; 
     margin: 0; 
@@ -57,5 +58,11 @@ form button{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
+
+/* 
+.temp{
+    color: #fff;
+    font-size: 1.3rem;
+} */
 
 

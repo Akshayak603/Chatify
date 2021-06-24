@@ -6,8 +6,17 @@ const socket=io.connect();
         const username=input.value;
         input.value="";
         const ul1=document.getElementById('messages');
+        // const pa=document.querySelector(".temp");
+        // function istyping(){
+        //     pa.innerText=username+" is Typing...";
+        //     setTimeout(()=>{
+        //         pa.innerText="";
+        //     },2000);
+        // }
+        // input.addEventListener('keypress',istyping);
         form.addEventListener('submit',function(e){
             e.preventDefault();
+            // pa.innerText="";
             const val=input.value;
             if(val)
             {
@@ -29,6 +38,8 @@ const socket=io.connect();
          })
          
         socket.emit('username',username);
+
+
 
       
        
