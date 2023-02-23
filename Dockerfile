@@ -13,5 +13,5 @@ RUN npm install
 
 #coopying and setting port and Cmd
 COPY . .
-EXPOSE 3000
+EXPOSE 7000
 CMD [ "node", "index.js" ]
