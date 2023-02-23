@@ -1,17 +1,21 @@
-#selecting base of image like versions
 FROM node:16
+# selecting base of image like versions
 
-#providing work directory
+
 WORKDIR ./
+# providing work directory
 
-#copying all packages
+
 COPY package*.json ./
+# copying all packages
 
-#installing those packages
+
 RUN npm install
+# installing those packages
 
 
-#coopying and setting port and Cmd
+
 COPY . .
 EXPOSE 7000
 CMD [ "node", "index.js" ]
+# copying and setting port and Cmd
